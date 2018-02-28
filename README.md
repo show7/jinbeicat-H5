@@ -1,6 +1,6 @@
-# firstvue
+# 金贝猫H5
 
-> a vue.js project
+> this is  vue progect
 
 ## Build Setup
 
