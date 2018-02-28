@@ -1,0 +1,60 @@
+@charset "utf-8";
+*{
+  -webkit-overflow-scrolling: touch;
+}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,button,input,textarea{padding:0px; margin:0px; border:none;}
+ img{ border:none}
+a,a:visited{  text-decoration:none;}
+a:active,
+a:hover { text-decoration:none;}
+a:focus,
+input:hover,
+button:hover,
+input[type='button']:hover{ outline:none;}
+i, 
+em, 
+cite { font-style:normal; }
+li{ vertical-align:bottom; overflow:hidden; list-style-type:none;}
+body, 
+button, 
+input, 
+select, 
+textarea{ font-family:'microsoft yahei',宋体,tahoma,arial,'Hiragino Sans GB',sans-serif; outline:none;}
+
+/* 自适应 */
+body{color:#454545;width:7.5rem;font-size:32px;font-size:.32rem;margin:0 auto;background:#f5f5f5;}
+.contents{padding-bottom:.89rem;}
+
+/* 禁止webkit横屏改变字体大小 */
+html{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+
+/* 设置HTML5元素为块 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;padding:0px; margin:0px; border:none;}
+
+/* 超出隐藏 */
+.overflow{ overflow:hidden;} 
+
+/* 点击去除阴影 */
+a,button,input,i{-webkit-tap-highlight-color:rgba(0,0,0,0); -moz-tap-highlight-color:rgba(0,0,0,0); -ms-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0);}       
+		          
+/* float */
+.fl{ float:left; }
+.fr{ float:right;}
+
+/* 图片自适应调整 并解决图片缩放的失真问题*/
+img{ max-width:100%; height:auto;border:none; interpolation-mode:bicubic;}
+
+/* 文字居中 */
+.txt-center{ text-align:center;}
+.txt-justify{ text-align:justify; text-justify:inter-ideograph;}
+
+/* 自动居中 */
+.mg-auto{ margin-left:auto; margin-right:auto; position:relative;}
+.clear{ clear:both;}
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance:none;
+}
+body{background: #f5f5f5;}
+.u-header {color: #fff;font-size: 0.380rem;line-height: 0.863rem;background: #e71a19;text-align: center;height: 0.863rem;position: relative;}	
+.u-header a {width: 0.253rem;height: 0.4227rem;float: left;position: absolute;left: 0.302rem; top: 26%;}
+.yd-notify{ background-color: rgba(40,40,40,.8);position: fixed; top:40%;left:0; right:0;line-height: .28rem; font-size: .26rem; color: #fff; padding: .3rem .24rem; opacity: 0; -webkit-animation: notify-downin .2s linear forwards;animation: notify-downin .2s linear forwards; word-break: break-all;text-align: center;z-index: 2000;width:255px;border-radius:5px;margin:0 auto;}

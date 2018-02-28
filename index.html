@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<!-- 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+		<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"> -->
+		<!-- <link rel="stylesheet" href="//unpkg.com/vue-ydui/dist/ydui.base.css"> -->
+	    <link rel="stylesheet" href="/static/css/commen.css">
+	    <script src="/static/js/city.js"></script>
+		<script type="text/javascript" src="/static/js/qrcode.min.js"></script>
+		<title>首页</title>
+		<script>
+			function GetQueryString(name)
+			{
+			     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+			     var r = window.location.search.substr(1).match(reg);
+			     if(r!=null)return  unescape(r[2]); return null;
+			}
+      var url = window.location.pathname;
+      var url1=GetQueryString("nsukey")
+     // console.log(url)
+      if(url1=="JRTTNEW"){
+	   (function(root) {
+            root._tt_config = true;
+            var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true;
+            ta.src = document.location.protocol + '//' + 's3.pstatp.com/bytecom/resource/track_log/src/toutiao-track-log.js';
+            ta.onerror = function () {
+                var request = new XMLHttpRequest();
+                var web_url = window.encodeURIComponent(window.location.href);
+                var js_url  = ta.src;
+                var url = '//ad.toutiao.com/link_monitor/cdn_failed?web_url=' + web_url + '&js_url=' + js_url + '&convert_id=70562181975';
+                request.open('GET', url, true);
+                request.send(null);
+            }
+           // console.log('70562181975')
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ta, s);
+        })(window);
+   
+      }     
+      if(url=="/activity/activity1"){
+      	   (function(root) {
+          root._tt_config = true;
+          var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true;
+          ta.src = document.location.protocol + '//' + 's3.pstatp.com/bytecom/resource/track_log/src/toutiao-track-log.js';
+          ta.onerror = function () {
+              var request = new XMLHttpRequest();
+              var web_url = window.encodeURIComponent(window.location.href);
+              var js_url  = ta.src;
+              var url = '//ad.toutiao.com/link_monitor/cdn_failed?web_url=' + web_url + '&js_url=' + js_url + '&convert_id=68345430759';
+              request.open('GET', url, true);
+              request.send(null);
+          }
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ta, s);
+      })(window); 
+      }else if(url=="/activity/activity4"){
+      	     (function(root) {
+            root._tt_config = true;
+            var ta = document.createElement('script'); ta.type = 'text/javascript'; ta.async = true;
+            ta.src = document.location.protocol + '//' + 's3.pstatp.com/bytecom/resource/track_log/src/toutiao-track-log.js';
+            ta.onerror = function () {
+                var request = new XMLHttpRequest();
+                var web_url = window.encodeURIComponent(window.location.href);
+                var js_url  = ta.src;
+                var url = '//ad.toutiao.com/link_monitor/cdn_failed?web_url=' + web_url + '&js_url=' + js_url + '&convert_id=73306577780';
+                request.open('GET', url, true);
+                request.send(null);
+            }
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ta, s);
+        })(window);
+      }
+
+        </script>
+		<style type="text/css">
+			html,
+			body {
+				background: #eee;
+				padding:0;
+				height: auto;
+			}
+			
+			ul,
+			li {
+				list-style: none;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			img {
+				vertical-align: middle;
+			}
+			/* 跳转页面动画 */
+			
+			/*.slide-enter,
+			.slide_back-enter {
+				position: absolute;
+				width: 100%;
+			}
+			
+			.slide-leave,
+			.slide_back-leave {
+				position: absolute;
+				width: 100%;
+			}
+			
+			.slide-enter-active,
+			.slide_back-enter-active {
+				transition: all 0.3s linear;
+			}
+			
+			.slide-leave-active {
+				position: absolute;
+				transition: all 0.3s linear;
+				transform: translate(-100%);
+			}
+			
+			.slide-enter {
+				transform: translateX(100%);
+			}
+			
+			.slide_back-leave-active {
+				position: absolute;
+				transition: all 0.3s linear;
+				transform: translate(100%);
+			}
+			
+			.slide_back-enter {
+				transform: translateX(-100%);
+			}*/
+		</style>
+	</head>
+
+	<body>
+		<div id="app">
+			<transition :name="transitionName">
+				<router-view></router-view>
+			</transition>
+		</div>
+
+		<script type="text/javascript">
+			// 计算html的font-size  
+			(function() {
+				function resizeBaseFontSize() {
+					var rootHtml = document.documentElement,
+						deviceWidth = rootHtml.clientWidth;
+
+					if(deviceWidth > 640) {
+						deviceWidth = 640;
+					}
+
+					rootHtml.style.fontSize = deviceWidth / 7.5 + "px";
+				}
+
+				resizeBaseFontSize();
+
+				window.addEventListener("resize", resizeBaseFontSize, false);
+				window.addEventListener("orientationchange", resizeBaseFontSize, false);
+			})();
+		</script>
+		<script src="/static/js/md5.min.js"></script>
+	</body>
+
+</html>
